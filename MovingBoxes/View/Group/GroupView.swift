@@ -14,6 +14,7 @@ struct GroupView: View {
 
     var body: some View {
         NavigationView {
+            
             List {
                 ForEach(groups, id: \.self) { group in
                     NavigationLink(destination: GroupDetails(group: group)) {
